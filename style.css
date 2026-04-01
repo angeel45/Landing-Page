@@ -1,9 +1,17 @@
+/* ===== INICIO DEL PROYECTO - CSS básico ===== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .card {
-    transition: transform 0.3s;
+    transition: transform 0.3s ease;
 }
+
 .card:hover {
     transform: translateY(-5px);
+}
+
+/* === editado=== */
+h2 {
+    color: #ff5722;     /* ← Cambio este color por otro */
 }
