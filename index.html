@@ -12,6 +12,7 @@
 </head>
 <body>
 
+    <!-- HEADER -->
     <header class="bg-success text-white py-3">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-dark">
@@ -24,6 +25,7 @@
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a></li>
                             <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                         </ul>
                     </div>
@@ -33,21 +35,23 @@
     </header>
 
     <main>
-        <!-- Sección 1: Hero -->
-        <section id="inicio" class="bg-light py-5 text-center">
+        <!-- Sección Hero -->
+        <section id="inicio" class="hero py-5 text-center">
             <div class="container">
-                <h1 class="display-4 fw-bold text-success">Bienvenidos a EcoVida</h1>
-                <p class="lead">Emprendimiento local que cuida el planeta y te ayuda a vivir más verde</p>
+                <h1 class="display-4 fw-bold">Bienvenidos a EcoVida</h1>
+                <p class="lead">Emprendimiento local comprometido con el medio ambiente</p>
                 <a href="#contacto" class="btn btn-success btn-lg">Contáctanos ahora</a>
-                <img src="https://picsum.photos/id/1015/1200/600" class="img-fluid mt-4 rounded-4 shadow" alt="Paisaje natural EcoVida">
+                <img src="https://picsum.photos/id/1015/1200/600" 
+                     class="img-fluid mt-4 rounded-4 shadow" 
+                     alt="Paisaje natural representando EcoVida">
             </div>
         </section>
 
-        <!-- Sección 2: Servicios -->
+        <!-- Sección Servicios -->
         <section id="servicios" class="py-5">
             <div class="container">
-                <h2 class="text-center mb-5 text-success">Nuestros Servicios</h2>
-                <!-- Código sugerido por IA (Grok) para los cards de servicios -->
+                <h2 class="text-center mb-5">Nuestros Servicios</h2>
+                <!-- Código sugerido por IA (Grok) para la sección de servicios -->
                 <div class="row g-4">
                     <article class="col-md-4">
                         <div class="card h-100 shadow">
@@ -80,48 +84,33 @@
             </div>
         </section>
 
-        <!-- Sección 3: Contacto -->
-        <section id="contacto" class="bg-light py-5">
+        <!-- Nueva Sección: Sobre Nosotros -->
+        <section id="sobre-nosotros" class="py-5 bg-white">
             <div class="container">
-                <h2 class="text-center mb-5 text-success">Contáctanos</h2>
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <!-- Código sugerido por IA (Grok) para el formulario con Bootstrap -->
-                        <form id="form-contacto">
-                            <div class="mb-3">
-                                <label class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" required>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label">Mensaje</label>
-                                <textarea class="form-control" rows="5" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-success w-100">Enviar mensaje</button>
-                        </form>
-                    </div>
+                <h2 class="text-center mb-5">Sobre EcoVida</h2>
+                <div class="row align-items-center">
+                    <article class="col-lg-6">
+                        <p>Somos un emprendimiento local comprometido con el medio ambiente. 
+                           Nuestro objetivo es ayudar a las personas y empresas a adoptar prácticas más sostenibles.</p>
+                        <p>Fundado en 2025, ya hemos realizado más de 30 talleres y ayudado a 150 familias.</p>
+                    </article>
+                    <article class="col-lg-6">
+                        <img src="https://picsum.photos/id/1016/600/400" 
+                             class="img-fluid rounded-4 shadow" 
+                             alt="Equipo de EcoVida trabajando en la naturaleza">
+                    </article>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer class="bg-success text-white py-4 text-center">
-        <div class="container">
-            <p>&copy; 2026 EcoVida - Todos los derechos reservados</p>
-            <p>Desarrollado con Bootstrap 5 y apoyo de IA</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.getElementById("form-contacto").addEventListener("submit", function(e) {
-            e.preventDefault();
-            alert("✅ ¡Mensaje enviado correctamente! (Demostración)");
-            this.reset();
-        });
-    </script>
-</body>
-</html>
+        <!-- Sección Contacto -->
+        <section id="contacto" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Contáctanos</h2>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <!-- Código sugerido por IA (Grok) para el formulario de contacto -->
+                        <form id="form-contacto">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre completo</label>
+                                <input type="text" class
